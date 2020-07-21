@@ -1,0 +1,347 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 105%;
+    background-position-x:center;
+    min-height: 60vw;
+    max-width: 120vw;
+    margin: 0 auto;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    border: 2px solid rgba(46, 46, 46, 0.575);
+    box-shadow: inset 0 0 2.5px rgba(0,0,0,0.5);
+
+} 
+::-webkit-scrollbar-thumb
+{
+    background: rgb(46, 46, 46);
+    border-radius: 40px;
+
+}
+
+.title
+{
+  width: 2000px;  
+  position: absolute;  
+  text-align: center;
+  background-position-x:10px ;
+  background-color: rgba(43, 43, 43, 0.884);
+
+}
+.title ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    
+}
+.title ul li
+{
+    width: 100;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.title ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+}
+.title ul li a:hover
+{
+  box-shadow: 0 0 20px rgb(141, 141, 141),0 0 40px rgba(141, 141, 141,),0 0 80px rgb(141, 141, 141),;
+  color: rgb(47, 94, 78);
+  font-size: 102%;
+}
+.design
+{
+    width: 220px;
+    text-align: left;
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    font-size: 120%;
+}
+.design p
+{
+    font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.line
+{
+    width: 2px;
+    height: 250px;
+    position:absolute;
+    margin-top:20px;
+    left:-23px;
+    background: rgb(27,27,27);
+    display: block;
+    transition: .5s;
+}
+
+.design h1
+{
+    font-size: 220%;
+    font-weight: 500;
+}
+.design button
+{
+  
+   outline: none;
+   color: #fff;
+   border-radius: 20px;
+   padding: 7px 30px;
+   cursor: pointer;
+   border: 2px solid rgb(46, 46, 46) ;
+   background: transparent;
+   margin: 30px 20px;
+   background-color:rgb(46, 46, 46); 
+   transition: .3s;
+}
+.design button:hover
+{
+    background: transparent;
+    font-weight: bold;
+    color:green;
+    padding: 7px 30.005px;
+    font-size: 101%;
+    border-radius: 40px;
+}
+.design button:active
+{
+    background: transparent;
+    font-weight: bold;
+    color:rgb(46, 46, 46);
+    padding: 7px 30.005px;
+    font-size: 110%;
+    border-radius: 50px;
+}
+.chack {
+    text-align: center;
+    font-size: 120%;
+    text-align: center;
+    margin:110px;
+    margin-bottom: 60px;
+    font-size: 120%;
+    font-weight:200;
+    
+
+}
+.chack h1
+{
+    font-size: 240%;
+    font-weight: 200;
+
+}
+.chack h1 a
+{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+}
+.imgs
+{
+   margin:20px;
+   right: 150px;
+}
+.b1 
+{
+    display: flex;
+    margin-left:100px;
+}
+.b1 img
+{
+    filter: grayscale(1);
+    zoom: 80%;
+    margin: 25px;
+    border-radius: 10px;
+    transition: .3s;
+    transition: .2s ease-in-out;
+}
+.b1 img:hover
+{
+    filter: grayscale(0);
+    transform:scale(1.03,1.03) ;
+    
+}
+.seartch-box
+{
+    position: absolute;
+    top: 5%;
+    left: 92.5%;
+    transform: translate(-50%,-50%);
+    background:rgb(27, 27, 27) ;
+    height: 40px;
+    border-radius: 40px;
+    padding: 2px 10px;
+
+}
+.seartch-box:hover > .seartch-txt
+{
+    width: 240px;
+    padding: 8px;
+}
+.seartch-box:hover > .seartch-btn
+{
+    background: #fff;
+    padding: 10px;
+}
+.seartch-btn
+{
+    color: rgb(255, 85, 85);
+    margin:0px;
+    float: right;
+    width: 40px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    padding:10px;
+}
+
+.seartch-txt
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding:0px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 4px;
+     margin-left:15px;
+     width: 0px;
+}
+.work::after
+{
+    content:'' ;
+    width: 0%;
+    height: 1.5px;
+    background: rgb(27,27,27);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.work:hover::after
+{
+    width: 18%;
+}
+section#about-me
+{
+    background: #222222;
+    padding: 11%;
+    color: #fff;
+    margin-top: 80px;
+}
+.about1
+{
+ margin: 10px;
+ margin-bottom: 60px;
+}
+.about1 p
+{
+    margin-bottom: 20px;
+    font-size: 80%;
+    font-weight:200;
+}
+.about1 h1
+{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+.about2
+{
+    width: 90%;
+    display: flex;
+}
+.about2
+{
+    padding: 0px 10px;
+    font-weight:200;
+}
+.about2 p.a1
+{
+    padding: 0px 30px;
+    margin-left:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circle1
+{  
+  margin-left:580px ; 
+  margin-top: 10000px;
+}
